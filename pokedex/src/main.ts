@@ -34,9 +34,9 @@ async function obterDadosPokemon(nomePokemon: string) {
       divStats.firstChild.remove();
 
     Swal.fire({
+      title: `An wild ${_.upperFirst(pokemon.name)} appeared!`,
       background: "#19191a",
       footer: frases[Math.floor(Math.random() * frases.length)],
-      confirmButtonText: _.upperFirst(pokemon.name),
       imageUrl: pokemon.sprites.front_default
     });
 
